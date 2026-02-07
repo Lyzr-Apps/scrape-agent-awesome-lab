@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "Job Search Trigger",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "job_scraper_agent",
+      "type": "Agent",
+      "label": "Job Scraper Agent",
+      "nodeCategory": "agent",
+      "agent_id": "6986ecdab4092699af3c635c"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Formatted Job Listings",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input_node",
+      "target": "job_scraper_agent"
+    },
+    {
+      "source": "job_scraper_agent",
+      "target": "output_node"
+    }
+  ]
+}

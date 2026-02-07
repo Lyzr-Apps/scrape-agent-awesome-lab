@@ -1,0 +1,145 @@
+{
+  "agent_name": "Job Scraper Agent",
+  "agent_id": "6986ecdab4092699af3c635c",
+  "agent_purpose": "job_search",
+  "description": "Backend developer job search agent that returns structured job listings with title, company, location, salary, and application links",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "jobs": [
+        {
+          "title": "string",
+          "company": "string",
+          "location": "string",
+          "postedDate": "string",
+          "salaryRange": "string",
+          "link": "string",
+          "description": "string"
+        }
+      ]
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string",
+      "total_jobs_found": "number"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "jobs": [
+        {
+          "title": "Backend Developer",
+          "company": "Tech Innovations Inc.",
+          "location": "San Francisco, CA",
+          "postedDate": "2024-01-20",
+          "salaryRange": "$110k-160k",
+          "link": "https://www.example.com/jobs/backend-developer-tech-innovations",
+          "description": "Join a rapidly expanding tech company focusing on innovative solutions and cloud technologies."
+        },
+        {
+          "title": "Senior Backend Developer",
+          "company": "Finance Solutions Ltd.",
+          "location": "New York, NY",
+          "postedDate": "2024-01-18",
+          "salaryRange": "$120k-175k",
+          "link": "https://www.example.com/jobs/senior-backend-dev-finance-solutions",
+          "description": "Lead backend development for high-traffic financial applications using modern frameworks."
+        },
+        {
+          "title": "Junior Backend Developer",
+          "company": "Creative Agency",
+          "location": "Austin, TX",
+          "postedDate": "2024-01-15",
+          "salaryRange": "Not specified",
+          "link": "https://www.example.com/jobs/junior-backend-dev-creative-agency",
+          "description": "Support our team in developing backend solutions for various client projects."
+        },
+        {
+          "title": "Backend Developer",
+          "company": "Ecommerce Corp.",
+          "location": "Chicago, IL",
+          "postedDate": "2024-01-12",
+          "salaryRange": "$90k-140k",
+          "link": "https://www.example.com/jobs/backend-developer-ecommerce-corp",
+          "description": "Work on developing scalable backend systems for a growing ecommerce platform."
+        },
+        {
+          "title": "Backend Developer",
+          "company": "HealthTech Inc.",
+          "location": "Seattle, WA",
+          "postedDate": "2024-01-10",
+          "salaryRange": "$100k-150k",
+          "link": "https://www.example.com/jobs/backend-developer-healthtech-inc",
+          "description": "Join a health tech company dedicated to improving patient care through innovative software solutions."
+        }
+      ]
+    },
+    "metadata": {
+      "agent_name": "Job Scraper Agent",
+      "timestamp": "2024-01-20T10:15:30Z",
+      "total_jobs_found": 5
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-07T07:43:20.698276",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "jobs": [
+        {
+          "title": "Backend Developer",
+          "company": "Tech Innovations Inc.",
+          "location": "San Francisco, CA",
+          "postedDate": "2024-01-20",
+          "salaryRange": "$110k-160k",
+          "link": "https://www.example.com/jobs/backend-developer-tech-innovations",
+          "description": "Join a rapidly expanding tech company focusing on innovative solutions and cloud technologies."
+        },
+        {
+          "title": "Senior Backend Developer",
+          "company": "Finance Solutions Ltd.",
+          "location": "New York, NY",
+          "postedDate": "2024-01-18",
+          "salaryRange": "$120k-175k",
+          "link": "https://www.example.com/jobs/senior-backend-dev-finance-solutions",
+          "description": "Lead backend development for high-traffic financial applications using modern frameworks."
+        },
+        {
+          "title": "Junior Backend Developer",
+          "company": "Creative Agency",
+          "location": "Austin, TX",
+          "postedDate": "2024-01-15",
+          "salaryRange": "Not specified",
+          "link": "https://www.example.com/jobs/junior-backend-dev-creative-agency",
+          "description": "Support our team in developing backend solutions for various client projects."
+        },
+        {
+          "title": "Backend Developer",
+          "company": "Ecommerce Corp.",
+          "location": "Chicago, IL",
+          "postedDate": "2024-01-12",
+          "salaryRange": "$90k-140k",
+          "link": "https://www.example.com/jobs/backend-developer-ecommerce-corp",
+          "description": "Work on developing scalable backend systems for a growing ecommerce platform."
+        },
+        {
+          "title": "Backend Developer",
+          "company": "HealthTech Inc.",
+          "location": "Seattle, WA",
+          "postedDate": "2024-01-10",
+          "salaryRange": "$100k-150k",
+          "link": "https://www.example.com/jobs/backend-developer-healthtech-inc",
+          "description": "Join a health tech company dedicated to improving patient care through innovative software solutions."
+        }
+      ]
+    },
+    "metadata": {
+      "agent_name": "Job Scraper Agent",
+      "timestamp": "2024-01-20T10:15:30Z",
+      "total_jobs_found": 5
+    }
+  },
+  "test_passed": true
+}

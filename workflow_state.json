@@ -1,0 +1,18 @@
+{
+  "workflow_name": "Backend Dev Job Scout",
+  "created_at": "2026-02-07",
+  "agent_ids": {
+    "job_scraper_agent": "6986ecdab4092699af3c635c"
+  },
+  "agents": [
+    {
+      "name": "Job Scraper Agent",
+      "agent_id": "6986ecdab4092699af3c635c",
+      "type": "single",
+      "provider": "Perplexity",
+      "model": "sonar-pro",
+      "response_schema": "response_schemas/job_scraper_agent_response.json"
+    }
+  ],
+  "workflow_status": "complete"
+}
